@@ -5,12 +5,13 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
     }
 
     body{
-        background: ${(props) => props.theme.colors.background};
+        background: ${({ theme }) => theme.colors.background};
         font-size: 15px;
-        color: ${(props) => props.theme.colors['text-white']};
-        font-family: sans-serif;
+        color: ${({ theme }) => theme.colors['text-white']};
     }
 `
